@@ -10,3 +10,15 @@ try{
 }finally{
 	alert("Hi, I am finally block!")
 }
+
+// handle custom error 
+try{
+	var x = 10;
+	if( x <= 100){
+		throw "value is too low";
+	}else if(x > 100){
+		throw "Value is too high"
+	}
+}catch(err){
+	console.log(err)
+}
