@@ -5,3 +5,7 @@ console.log(`Age: ${age} toReversed: ${toReversed}`);
 let number = [5, 4, 1, 10, 20, 35, 30];
 let toSplice = number.toSpliced(2, 1, 15, 25, 50); // toSpliced(start, deleteCount, item1)
 console.log(toSplice); // immutable way 
+
+
+let man = [1, 2, 3, 5, 4];
+console.log(man.toString())
