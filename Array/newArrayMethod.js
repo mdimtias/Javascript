@@ -9,3 +9,8 @@ console.log(toSplice); // immutable way
 
 let man = [1, 2, 3, 5, 4];
 console.log(man.toString())
+
+const languages = ["JavaScript", "TypeScript", "CoffeeScript"];
+const updated = languages.with(2, "WebAssembly");
+console.log(updated); // => [ 'JavaScript', 'TypeScript', 'WebAssembly' ]
+console.log(languages); // => [ 'JavaScript', 'TypeScript', CoffeeScript' ]
