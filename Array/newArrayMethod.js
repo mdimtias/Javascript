@@ -14,3 +14,12 @@ const languages = ["JavaScript", "TypeScript", "CoffeeScript"];
 const updated = languages.with(2, "WebAssembly");
 console.log(updated); // => [ 'JavaScript', 'TypeScript', 'WebAssembly' ]
 console.log(languages); // => [ 'JavaScript', 'TypeScript', CoffeeScript' ]
+
+
+const strings = ["abc", "äbc", "def"];
+const sorted = strings.toSorted();
+console.log(sorted);
+// => [ 'abc', 'def', 'äbc' ]
+const sortedCorrectly = strings.toSorted((a, b) => a.localeCompare(b));
+console.log(sortedCorrectly);
+// => [ 'abc', 'äbc', 'def' ]
