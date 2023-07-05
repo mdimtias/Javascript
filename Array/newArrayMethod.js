@@ -23,3 +23,13 @@ console.log(sorted);
 const sortedCorrectly = strings.toSorted((a, b) => a.localeCompare(b));
 console.log(sortedCorrectly);
 // => [ 'abc', 'äbc', 'def' ]
+
+
+const d = new Date();
+let text = d.toLocaleString();
+console.log(text)
+
+const array1 = [1, 'a', new Date('21 Dec 1997 14:12:00 UTC')];
+const localeString = array1.toLocaleString('en', { timeZone: 'UTC' });
+
+console.log(localeString);
