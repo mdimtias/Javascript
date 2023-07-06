@@ -8,7 +8,9 @@ console.log(mapped);
 const filterd = arr.filter(element => element % 2 === 0);
 console.log(filterd);
 
-
-
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Strawberry", "Pineapple", "Grape", "Watermelon"];
+// The at() method returns an indexed element from an array.
+const fruit = fruits.at(2); // Default is 0 and -1 returns the last element. Result Apple
+console.log(fruit);
 
 
