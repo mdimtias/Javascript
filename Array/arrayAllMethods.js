@@ -13,4 +13,8 @@ const fruits = ["Banana", "Orange", "Apple", "Mango", "Strawberry", "Pineapple",
 const fruit = fruits.at(2); // Default is 0 and -1 returns the last element. Result Apple
 console.log(fruit);
 
+const arr2 = ["A", "B", "C",];
+const arr3 = ["D", "E", "F",];
+console.log(arr2.concat(arr3));
+
 
