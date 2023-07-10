@@ -77,5 +77,5 @@ console.log(arr7.includes("T")); // true
 console.log(arr7.includes("H")); // false
 const sortDesc = arr7.sort((a, b)=> a > b ? -1 : 1); // sort in descending order
 const sortAsce = arr8.sort((a, b)=> a > b ? 1 : -1); // sort in ascending order
-console.log(sortDesc);
-console.log(sortAsce);
+console.log("Sort Desc", sortDesc);
+console.log("Sort Asce", sortAsce);
