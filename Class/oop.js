@@ -1,9 +1,9 @@
+// Private Property
 _salary = Symbol("salary");
 class Person {
 	constructor(name, email, salary){
 		this.name = name;
 		this.email = email;
-		// Private Property
 		this[_salary] = salary;
 	}
 	static country = "Bangladesh";
