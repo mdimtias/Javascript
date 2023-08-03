@@ -25,5 +25,9 @@ class ManOne extends Person {
 		console.log(`My Name is ${this.name} , Email ${this.email} and Phone ${this.phone}`);
 	}
 }
-const personOne = new ManOne("rohim", "rohim@gmail.com", 018120000005);
+
+// Polymorphism
+const personOne = new ManOne("rohim", "rohim@gmail.com", 01812000005);
+const personTwo = new ManOne("Karim", "karim@gmail.com", 01814500005);
+
 console.log(personOne.print());
