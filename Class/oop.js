@@ -1,9 +1,16 @@
+_salary = Symbol("salary");
 class Person {
-	constructor(name, email){
+	constructor(name, email, salary){
 		this.name = name;
 		this.email = email;
+		// Private Property
+		this[_salary] = salary;
 	}
 	static country = "Bangladesh";
+	
+	static isValid(age){
+		return age >= 18;
+	}
 	
 	print(){
 		console.log(`My Name is ${this.name} and Email ${this.email}`);
@@ -14,7 +21,7 @@ const karim = new Person("Karim", "karim@gmail.com");
 console.log(karim.print()); 
 
 console.log(Person.country); // access Static proferty to direct class name
-
+console.log(Person.isValid(19));
 //  Inheritance
 class ManOne extends Person {
 	constructor(name, email, phone){
